@@ -5,7 +5,8 @@ pipeline {
          stage('Build') {
              steps {
                  script {
-                     sh 'g++ -o PES2UG22CS069-1 main.cpp'
+                    //Intentional error: non-existing file
+                     sh 'g++ -o PES2UG22CS069-1 meh.cpp'
                  }
              }
          }
